@@ -1,12 +1,14 @@
 import readlineSync from 'readline-sync';
 
 import {
-  welcomePlayer, taskDescription, congrat, getEvenTask, getCalcTask,
+  greatness, taskDescription, congratMessage, failMessage, getEvenTask, getCalcTask,
   getIsPrimeTask, getMaxDivisorTask, getProgressionTask,
 } from './toolbox.js';
 
 export const evenPlay = () => {
-  welcomePlayer();
+  const player = readlineSync.question('May i have your name? ');
+  const savePlayer = `${player}`;
+  greatness(savePlayer);
   taskDescription('Answer "yes" if the number is even, otherwise answer "no".');
   const iter = (acc) => {
     const expression = getEvenTask();
@@ -14,11 +16,10 @@ export const evenPlay = () => {
     console.log(`Question: ${num}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
-      const failMessage = console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again!`);
-      return failMessage;
+      return failMessage(answer, correctAnswer, savePlayer);
     }
     if (acc === 3) {
-      return congrat();
+      return congratMessage(savePlayer);
     }
     console.log('Correct!');
     return iter(acc + 1);
@@ -27,7 +28,9 @@ export const evenPlay = () => {
 };
 
 export const calcPlay = () => {
-  welcomePlayer();
+  const player = readlineSync.question('May i have your name? ');
+  const savePlayer = `${player}`;
+  greatness(savePlayer);
   taskDescription('What is the result of the expression?');
   const iter = (acc) => {
     const taskCalc = getCalcTask(); // generate task-array;
@@ -36,11 +39,10 @@ export const calcPlay = () => {
     console.log(`Question: ${expression}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
-      const failMessage = console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
-      return failMessage;
+      return failMessage(answer, correctAnswer, savePlayer);
     }
     if (acc === 3) {
-      return congrat();
+      return congratMessage(savePlayer);
     }
     console.log('Correct!');
     return iter(acc + 1);
@@ -49,7 +51,9 @@ export const calcPlay = () => {
 };
 
 export const isPrimePlay = () => {
-  welcomePlayer();
+  const player = readlineSync.question('May i have your name? ');
+  const savePlayer = `${player}`;
+  greatness(savePlayer);
   taskDescription('Answer "yes" if the number is prime, otherwise answer "no".');
   const iter = (acc) => {
     const primeTask = getIsPrimeTask();
@@ -57,11 +61,10 @@ export const isPrimePlay = () => {
     console.log(`Question: ${value}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
-      const failMessage = console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Try again!`);
-      return failMessage;
+      return failMessage(answer, correctAnswer, savePlayer);
     }
     if (acc === 3) {
-      return congrat();
+      return congratMessage(savePlayer);
     }
     console.log('Correct!');
     return iter(acc + 1);
@@ -70,19 +73,20 @@ export const isPrimePlay = () => {
 };
 
 export const maxDivisorPlay = () => {
-  welcomePlayer();
-  taskDescription('Find max divisor for two values');
+  const player = readlineSync.question('May i have your name? ');
+  const savePlayer = `${player}`;
+  greatness(savePlayer);
+  taskDescription('Find the greatest common divisor of given numbers');
   const iter = (acc) => {
     const maxDivisorTask = getMaxDivisorTask();
     const [first, second, correctAnswer] = maxDivisorTask;
     console.log(`Question: ${first}, ${second}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
-      const failMessage = console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Try again!`);
-      return failMessage;
+      return failMessage(answer, correctAnswer, savePlayer);
     }
     if (acc === 3) {
-      return congrat();
+      return congratMessage(savePlayer);
     }
     console.log('Correct!');
     return iter(acc + 1);
@@ -91,20 +95,21 @@ export const maxDivisorPlay = () => {
 };
 
 export const progressionPlay = () => {
-  welcomePlayer();
-  taskDescription('What number is missing in this progression?');
+  const player = readlineSync.question('May i have your name? ');
+  const savePlayer = `${player}`;
+  greatness(savePlayer);
+  taskDescription('What number is missing in the progression?');
   const iter = (acc) => {
     const progression = getProgressionTask(); // generate task-array;
     const [findEmptyNumber, correctAnswer] = progression;
     // here we use array to generate question and define wright answer;
-    console.log(`Question: ${[...findEmptyNumber]}`);
+    console.log(`Question: ${findEmptyNumber}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
-      const failMessage = console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Try again!`);
-      return failMessage;
+      return failMessage(answer, correctAnswer, savePlayer);
     }
     if (acc === 3) {
-      return congrat();
+      return congratMessage(savePlayer);
     }
     console.log('Correct!');
     return iter(acc + 1);

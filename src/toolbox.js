@@ -10,14 +10,21 @@ export const welcomePlayer = () => {
   console.log('Welcome to the Brain-games!');
   const player = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${player}!`);
-  return player;
+  const savePlayer = `${player}`;
+  return savePlayer;
 };
 
 export const taskDescription = (str) => console.log(str);
 
-export const congrat = () => {
-  console.log('Congratulations!');
-};
+// example of message if player wins
+export const congratMessage = (str) => console.log(`Congratulations, ${str}!`);
+
+// example of message if player fails
+export const failMessage = (actual, correct, playerName) => console.log(`"${actual}" is wrong answer ;(. Correct answer was "${correct}". Let's try again, ${playerName}!`);
+
+// greatness
+export const greatness = (str) => console.log(`Hello, ${str}!`);
+
 /* here are the constructor-functions for each game. constructor creates an array.
 the first element - is an expression, the second - is the correct answer */
 export const getCalcTask = () => {
@@ -65,13 +72,13 @@ export const getProgressionTask = () => {
     const result = [];
     const counter = getRandom(1, 10);
     result.push(getRandom(0, 100));
-    for (let i = 0; i < 7; i += 1) {
+    for (let i = 0; i < 9; i += 1) {
       result.push(result[i] + counter);
     }
     return result;
   };
   const array = getArray();
-  const index = getRandom(0, 7);
+  const index = getRandom(0, 9);
   const emptyIndexArray = [];
   const taskArray = [];
   const correctAnswer = array[index];
@@ -80,7 +87,7 @@ export const getProgressionTask = () => {
       emptyIndexArray.push(array[i]);
     } else { emptyIndexArray.push('..'); }
   }
-  taskArray.push(emptyIndexArray, correctAnswer.toString());
+  taskArray.push(emptyIndexArray.join(' '), correctAnswer.toString());
   return taskArray;
 };
 
