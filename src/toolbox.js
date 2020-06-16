@@ -93,7 +93,7 @@ export const getProgressionTask = () => {
 
 export const getIsPrimeTask = () => {
   const primeTask = [];
-  const value = getRandom(0, 99);
+  const value = getRandom(0, 3599);
   primeTask.push(value);
   const isPrime = (num) => {
     if (num < 2) {
