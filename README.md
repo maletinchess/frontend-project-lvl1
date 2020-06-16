@@ -9,3 +9,7 @@ trying to make some environment settings
 asclinema for brain-even and brain-calc:
 
 https://asciinema.org/a/CWBqkttvSbzhqzCFAucak2BYi
+
+asclinema for brain-gcd:
+
+https://asciinema.org/a/bkFn4Wo8qPJBO19ACIEZJxq6A
