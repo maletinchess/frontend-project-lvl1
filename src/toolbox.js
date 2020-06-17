@@ -1,29 +1,19 @@
-import readlineSync from 'readline-sync';
-
 export const getRandom = (min, max) => {
   const newMin = Math.ceil(min);
   const newMax = Math.floor(max);
   return Math.floor(Math.random() * (newMax - newMin + 1)) + newMin;
 };
 
-export const welcomePlayer = () => {
-  console.log('Welcome to the Brain-games!');
-  const player = readlineSync.question('May i have your name? ');
-  console.log(`Hello, ${player}!`);
-  const savePlayer = `${player}`;
-  return savePlayer;
-};
-
-export const taskDescription = (str) => console.log(str);
+export const getTaskDescription = (str) => console.log(str);
 
 // example of message if player wins
-export const congratMessage = (str) => console.log(`Congratulations, ${str}!`);
+export const makeCongratMessage = (str) => console.log(`Congratulations, ${str}!`);
 
 // example of message if player fails
-export const failMessage = (actual, correct, playerName) => console.log(`"${actual}" is wrong answer ;(. Correct answer was "${correct}". Let's try again, ${playerName}!`);
+export const makeFailMessage = (actual, correct, playerName) => console.log(`"${actual}" is wrong answer ;(. Correct answer was "${correct}". Let's try again, ${playerName}!`);
 
 // greatness
-export const greatness = (str) => console.log(`Hello, ${str}!`);
+export const makeGreatness = (str) => console.log(`Hello, ${str}!`);
 
 /* here are the constructor-functions for each game. constructor creates an array.
 the first element - is an expression, the second - is the correct answer */
