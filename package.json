@@ -24,7 +24,7 @@
     "url": "https://github.com/maletinchess/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/maletinchess/frontend-project-lvl1#readme",
-  "keywords": "math, games, brain, calculate, prime",
+  "keywords": ["math", "games", "brain", "calculate", "prime", "progression", "even", "divisor"],
   "dependencies": {
     "confusing-browser-globals": "^1.0.9",
     "readline-sync": "^1.4.10"
