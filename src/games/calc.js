@@ -1,10 +1,8 @@
-import readlineSync from 'readline-sync';
-
 import {
-  getRandom, makeGreatness, getTaskDescription, makeCongratMessage, makeFailMessage,
-} from '../toolbox.js';
+  getRandom, makePlay,
+} from '../index.js';
 
-const getCalcTask = () => {
+const calc = () => {
   // example of constructor for calculation-play;
   // get two values from random-function
   const firstValue = getRandom(-100, 100);
@@ -32,26 +30,5 @@ const getCalcTask = () => {
   return calcTask;
 };
 
-const playCalc = () => {
-  const player = readlineSync.question('May i have your name? ');
-  const savePlayer = `${player}`;
-  makeGreatness(savePlayer);
-  getTaskDescription('What is the result of the expression?');
-  const iter = (acc) => {
-    const taskCalc = getCalcTask(); // generate task-array;
-    const [expression, correctAnswer] = taskCalc;
-    // here we use array to generate question and define wright answer;
-    console.log(`Question: ${expression}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer !== correctAnswer) {
-      return makeFailMessage(answer, correctAnswer, savePlayer);
-    }
-    if (acc === 3) {
-      return makeCongratMessage(savePlayer);
-    }
-    console.log('Correct!');
-    return iter(acc + 1);
-  };
-  return iter(1);
-};
+const playCalc = () => makePlay('What is the result of the expression?', calc);
 export default playCalc;
