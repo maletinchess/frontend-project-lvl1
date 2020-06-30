@@ -1,5 +1,6 @@
 ![CI](https://github.com/maletinchess/frontend-project-lvl1/workflows/CI/badge.svg)
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+
+<a href="https://codeclimate.com/github/maletinchess/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d0d3296e856145f35f74/maintainability" /></a>
 
 First project frontend java script from hexlet.
 
