@@ -1,4 +1,4 @@
-![Main](https://github.com/maletinchess/frontend-project-lvl1/actions?query=workflow%3AMain)
+![Main](https://github.com/maletinchess/frontend-project-lvl1/workflows/Main/badge.svg?branch=master&event=push)
 
 <a href="https://codeclimate.com/github/maletinchess/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/d0d3296e856145f35f74/maintainability" /></a>
 
