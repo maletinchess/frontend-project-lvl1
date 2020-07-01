@@ -19,7 +19,7 @@ asciinema for brain-even:
 
 asciinema for brain-calc:
 
-<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH??speed=3" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
+<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH?speed=3" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
 
 https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH
 
@@ -29,7 +29,7 @@ https://asciinema.org/a/bkFn4Wo8qPJBO19ACIEZJxq6A
 
 asciinema for brain-progression:
 
-https://asciinema.org/a/eYqHyG8qTtSrKQTyYUPKVFYhE
+<a href="https://asciinema.org/a/eYqHyG8qTtSrKQTyYUPKVFYhE?speed=3" target="_blank"><img src="https://asciinema.org/a/eYqHyG8qTtSrKQTyYUPKVFYhE.svg" /></a>
 
 asciinema for brain-prime:
 
