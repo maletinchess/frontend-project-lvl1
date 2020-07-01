@@ -2,7 +2,6 @@ import runPlay from '../index.js';
 
 import getRandom from '../utils.js';
 
-
 const isPrime = (num) => {
   if (num < 2) {
     return false;
@@ -15,16 +14,14 @@ const isPrime = (num) => {
   return true;
 };
 
-/* get an array, which contains expression for task as first element
-and the correct answer as a second one. */
-const getIsPrimeData = () => {
-  const question = getRandom(0, 1000);
+const getGameData = () => {
+  const question = getRandom(0, 1000).toString();
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
-const isPrimeDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const playPrime = () => runPlay(isPrimeDescription, getIsPrimeData);
+const playPrime = () => runPlay(description, getGameData);
 
 export default playPrime;
