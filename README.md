@@ -15,7 +15,7 @@ ascinema for install:
 
 asciinema for brain-even:
 
-https://asciinema.org/a/O0PrHPLopUkLUiSmwcQIHyioq
+[![asciicast](https://asciinema.org/a/O0PrHPLopUkLUiSmwcQIHyioq.svg)](https://asciinema.org/a/O0PrHPLopUkLUiSmwcQIHyioq)
 
 asciinema for brain-calc:
 
