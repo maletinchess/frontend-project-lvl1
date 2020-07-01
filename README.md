@@ -25,7 +25,7 @@ https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH
 
 asciinema for brain-gcd:
 
-https://asciinema.org/a/bkFn4Wo8qPJBO19ACIEZJxq6A
+<a href="https://asciinema.org/a/bkFn4Wo8qPJBO19ACIEZJxq6A?speed=3" target="_blank"><img src="https://asciinema.org/a/bkFn4Wo8qPJBO19ACIEZJxq6A.svg" /></a>
 
 asciinema for brain-progression:
 
