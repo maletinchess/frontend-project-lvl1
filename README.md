@@ -19,7 +19,7 @@ asciinema for brain-even:
 
 asciinema for brain-calc:
 
-<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH?speed=2" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
+<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH?speed=3" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
 
 https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH
 
