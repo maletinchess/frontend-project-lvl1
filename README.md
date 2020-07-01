@@ -11,8 +11,7 @@ The games are: Is even, Calculation, Get max divisor, Is Prime, Progression.
 
 ascinema for install:
 
-[![asciicast](https://asciinema.org/a/BTKt1g9ABqVTabAq2x4Y9cNVV.svg)](https://asciinema.org/a/BTKt1g9ABqVTabAq2x4Y9cNVV)
-
+<script id="asciicast-BTKt1g9ABqVTabAq2x4Y9cNVV" src="https://asciinema.org/a/BTKt1g9ABqVTabAq2x4Y9cNVV.js" async></script>
 
 asciinema for brain-even:
 
