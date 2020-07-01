@@ -11,7 +11,7 @@ The games are: Is even, Calculation, Get max divisor, Is Prime, Progression.
 
 ascinema for install:
 
-[![asciicast](https://asciinema.org/a/340486.svg)](https://asciinema.org/a/340486)
+<a href="https://asciinema.org/a/340486?speed=4" target="_blank"><img src="https://asciinema.org/a/340486.svg" /></a>
 
 asciinema for brain-even:
 
@@ -19,7 +19,7 @@ asciinema for brain-even:
 
 asciinema for brain-calc:
 
-<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH?speed=3" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
+<a href="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH??speed=4" target="_blank"><img src="https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH.svg" /></a>
 
 https://asciinema.org/a/blNjeGiHkuxCA58Rl9nUyjZwH
 
@@ -33,7 +33,7 @@ https://asciinema.org/a/eYqHyG8qTtSrKQTyYUPKVFYhE
 
 asciinema for brain-prime:
 
-https://asciinema.org/a/A2svOiGRraU4ipLPI7tXd3hlP
+<a href="https://asciinema.org/a/A2svOiGRraU4ipLPI7tXd3hlP?speed=4" target="_blank"><img src="https://asciinema.org/a/A2svOiGRraU4ipLPI7tXd3hlP.svg" /></a>
 
 все игры построены на следующей схеме: сначала специальная функция генерирует массив (как правило, из двух элементов). Первый элемент - это задание (число, выражение или прогрессия), второй - правильный ответ. Затем эти значения, сохраненные в константы с помощью деструктуризации, используются в "игровых" функциях - в выводе константы, в сообщениях пользователю.
 
