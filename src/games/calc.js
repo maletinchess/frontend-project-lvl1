@@ -2,8 +2,8 @@ import runPlay from '../index.js';
 
 import getRandom from '../utils.js';
 
-const toCalculate = (number1, number2, operand) => {
-  switch (operand) {
+const toCalculate = (number1, number2, operator) => {
+  switch (operator) {
     case '+':
       return number1 + number2;
     case '-':
@@ -11,18 +11,18 @@ const toCalculate = (number1, number2, operand) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error(`${operand} is unknown operand`);
+      throw new Error(`${operator} is unknown operand`);
   }
 };
 
-const operands = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
 const getGameData = () => {
   const firstValue = getRandom(-100, 100);
   const secondValue = getRandom(-100, 100);
-  const operand = operands[getRandom(0, operands.length - 1)];
-  const question = `${firstValue} ${operand} ${secondValue}`;
-  const answer = toCalculate(firstValue, secondValue, operand).toString();
+  const operator = operators[getRandom(0, operators.length - 1)];
+  const question = `${firstValue} ${operator} ${secondValue}`;
+  const answer = toCalculate(firstValue, secondValue, operator).toString();
   return [question, answer];
 };
 

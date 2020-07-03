@@ -1,11 +1,13 @@
 import readlineSync from 'readline-sync';
 
+const rounds = 3;
+
 const runPlay = (description, getGameData) => {
   console.log('Welcome to the Brain games!');
   const player = readlineSync.question('May i have your name? ');
   console.log(description);
   const iter = (acc) => {
-    if (acc === 3) {
+    if (acc === rounds) {
       console.log(`Congratulations, ${player}!`);
       return;
     }
